@@ -26,7 +26,9 @@ class TopMenu extends Component {
               animationDuration={0.2}
             />
           </div>
-          <div className="logo">Plant Go</div>
+          <div className="logo">
+            {this.props.isLogin ? "Login" : "Wild Walk"}
+          </div>
         </div>
         <div id="menu" className={this.state.menuOpen ? "isopen" : undefined}>
           <NavLink to="/dashboard" className="menu-button">

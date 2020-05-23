@@ -8,12 +8,14 @@ class LoginScreen extends Component {
     const responseGoogle = (res) => {
       console.log(res);
     };
+
     return (
       <div>
-        <TopMenu />
+        <TopMenu isLogin="true" />
         <div className="google-login-button">
           <GoogleLogin
-            buttonText="Login"
+            clientId={process.env.REACT_APP_FIREBASE_CLIENT_ID}
+            buttonText="Login with Google"
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
             cookiePolicy={"single_host_origin"}

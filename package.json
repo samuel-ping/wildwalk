@@ -1,5 +1,5 @@
 {
-  "name": "plantgo",
+  "name": "wildwalk",
   "version": "1.0.0",
   "description": "## Pokemon Go, but with plants!",
   "main": "index.js",
@@ -12,16 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samuel-ping/plantgo.git"
+    "url": "git+https://github.com/samuel-ping/wildwalk.git"
   },
   "keywords": [],
   "author": "Samuel Ping",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samuel-ping/plantgo/issues"
+    "url": "https://github.com/samuel-ping/wildwalk/issues"
   },
-  "homepage": "https://github.com/samuel-ping/plantgo#readme",
+  "homepage": "https://github.com/samuel-ping/wildwalk#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
