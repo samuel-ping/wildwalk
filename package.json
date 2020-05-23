@@ -1,0 +1,31 @@
+{
+  "name": "plantgo",
+  "version": "1.0.0",
+  "description": "## Pokemon Go, but with plants!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuel-ping/plantgo.git"
+  },
+  "keywords": [],
+  "author": "Samuel Ping",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuel-ping/plantgo/issues"
+  },
+  "homepage": "https://github.com/samuel-ping/plantgo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
