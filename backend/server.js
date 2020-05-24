@@ -9,6 +9,10 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json({ limit: "25mb" }));
 
+// for hosting on AWS ec2 instance
+const path = require("path");
+app.use(express.static(path.join(__dirname, "client/build")));
+
 const uri = process.env.MONGODB_ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
 const connection = mongoose.connection;

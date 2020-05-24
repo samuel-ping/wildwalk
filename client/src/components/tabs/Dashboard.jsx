@@ -46,7 +46,12 @@ class PlantList extends Component {
 
   render() {
     if (this.state.isPosting) {
-      return <Spinner animation="border" variant="success" />;
+      return (
+        <div>
+          <TopMenu />
+          <Spinner animation="border" variant="success" />
+        </div>
+      );
     } else {
       return (
         <div>
