@@ -9,7 +9,8 @@ app.use(express.json());
 var resultsSummary = null;
 var results = null;
 
-app.post("/plants", (req, res) => {
+// returns list of native species according to user's location
+app.post("/api/plants", (req, res) => {
   var location = JSON.parse(JSON.stringify(req.body)).location;
   const parameters = {
     criteriaType: "combined",
@@ -35,5 +36,7 @@ app.post("/plants", (req, res) => {
       res.json(returnData);
     });
 });
+
+// adds photo and species to database
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

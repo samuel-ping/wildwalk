@@ -1,8 +1,13 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HamburgerIcon from "react-hamburger-menu";
-import { FiLogIn as LoginIcon } from "react-icons/fi";
 import { IoMdPaw as PawIcon } from "react-icons/io";
+import {
+  BsListUl as DashboardIcon,
+  BsListCheck as CollectionIcon,
+} from "react-icons/bs";
+import { FaBinoculars as DiscoveryIcon } from "react-icons/fa";
+import { FiLogIn as LoginIcon } from "react-icons/fi";
 import "./TopMenu.css";
 
 class TopMenu extends Component {
@@ -19,7 +24,7 @@ class TopMenu extends Component {
     return (
       <div className="top-menu">
         <div className="topbar">
-          <div className="menu-icon">
+          <div className="toggle-menu-icon">
             <HamburgerIcon
               isOpen={this.state.menuOpen}
               menuClicked={this.handleMenuClick.bind(this)}
@@ -40,10 +45,22 @@ class TopMenu extends Component {
         </div>
         <div id="menu" className={this.state.menuOpen ? "isopen" : undefined}>
           <NavLink to="/dashboard" className="menu-button">
-            Species to Find
+            <div className="menu-icon">
+              <DashboardIcon />
+            </div>
+            <div className="menu-text">Species to Find</div>
           </NavLink>
           <NavLink to="/collection" className="menu-button">
-            Species Found
+            <div className="menu-icon">
+              <CollectionIcon />
+            </div>
+            <div className="menu-text">Species Collection</div>
+          </NavLink>
+          <NavLink to="/add-photo" className="menu-button" id="photo">
+            <div className="menu-icon">
+              <DiscoveryIcon />
+            </div>
+            <div className="menu-text">Add a Discovery!</div>
           </NavLink>
           <NavLink to="/login" className="menu-button" id="login">
             <div className="login-menu-button">

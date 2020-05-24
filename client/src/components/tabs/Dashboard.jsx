@@ -28,9 +28,9 @@ class PlantList extends Component {
 
   fetchNewData(pageIndex, parameters) {
     axios
-      .post("/plants", parameters)
+      .post("/api/plants", parameters)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         this.setState({
           isPosting: false,
           pageIndex: this.state.pageIndex + 1,
@@ -58,7 +58,13 @@ class PlantList extends Component {
                   <Card.Body>
                     <Card.Title>{species.primaryCommonName}</Card.Title>
                     <Card.Subtitle>{species.scientificName}</Card.Subtitle>
-                    <Button>Found it!</Button>
+                    <Button
+                      style={{
+                        backgroundColor: "#387759",
+                      }}
+                    >
+                      Found it!
+                    </Button>
                   </Card.Body>
                 </Card>
               </div>

@@ -10,7 +10,7 @@
   font-size: 30px;
 }
 
-.menu-icon {
+.toggle-menu-icon {
   position: absolute;
   left: 15px;
 }
@@ -32,10 +32,12 @@
 }
 
 .menu-button {
+  display: flex;
+  flex-direction: row;
   text-decoration: none;
   color: #ffffff;
   border-bottom: solid #36634c 1px;
-  padding: 10px 10px;
+  padding: 25px 15px;
 }
 
 .menu-button:hover {
@@ -47,6 +49,10 @@
   bottom: 70px;
   border: none;
   font-size: 20px;
+}
+
+.menu-icon {
+  margin-right: 10px;
 }
 
 .login-menu-button {
