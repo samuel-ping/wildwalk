@@ -40,10 +40,10 @@ class TopMenu extends Component {
         </div>
         <div id="menu" className={this.state.menuOpen ? "isopen" : undefined}>
           <NavLink to="/dashboard" className="menu-button">
-            Dashboard
+            Species to Find
           </NavLink>
           <NavLink to="/collection" className="menu-button">
-            Plant Collection
+            Species Found
           </NavLink>
           <NavLink to="/login" className="menu-button" id="login">
             <div className="login-menu-button">

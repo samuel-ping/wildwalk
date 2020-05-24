@@ -1,0 +1,14 @@
+.species-card-wrapper {
+  columns: 2 auto;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.natureserve-citation {
+  color: #ffffff;
+  background-color: #2c5c44;
+  font-size: xx-small;
+}
