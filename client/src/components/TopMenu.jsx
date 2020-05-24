@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import HamburgerIcon from "react-hamburger-menu";
 import { FiLogIn as LoginIcon } from "react-icons/fi";
+import { IoMdPaw as PawIcon } from "react-icons/io";
 import "./TopMenu.css";
 
 class TopMenu extends Component {
@@ -27,7 +28,14 @@ class TopMenu extends Component {
             />
           </div>
           <div className="logo">
-            {this.props.isLogin ? "Login" : "Wild Walk"}
+            {this.props.isLogin ? (
+              "Login"
+            ) : (
+              <div>
+                Wild Walk
+                <PawIcon />
+              </div>
+            )}
           </div>
         </div>
         <div id="menu" className={this.state.menuOpen ? "isopen" : undefined}>
