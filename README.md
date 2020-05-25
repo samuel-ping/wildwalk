@@ -1,6 +1,12 @@
 # wildwalk
 
-## Pokemon Go, but with real-life species!
+## Pokemon Go, but with real-life species! Made for BackyardHacks. I'm not actively working on it right now.
+
+## What it does
+
+- See native species in your state.... but its currently hardcoded to NJ
+- Add photos to your collection.... but MongoDB isn't working on my ec2 instance for some reason
+- Check out past photos added to your collection.... but same thing as above
 
 ## To-do List:
 
