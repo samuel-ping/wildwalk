@@ -1,6 +1,6 @@
 # wildwalk
 
-## Pokemon Go, but with real-life species! Made for BackyardHacks. I'm not actively working on it right now.
+## Pokemon Go, but with real-life species! Made for BackyardHacks.
 
 ## What it does
 
